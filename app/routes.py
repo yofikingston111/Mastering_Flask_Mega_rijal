@@ -8,7 +8,7 @@ from app.forms import LoginForm
 def index():
     user = {'username': 'rijal'}
     posts = [
-        {     'author': {'username': 'John'},
+        {     'author': {'username': 'muklis'},
                 'body': 'Beautiful day in Portland!'
         },
             {'author': {'username': 'lala'},
