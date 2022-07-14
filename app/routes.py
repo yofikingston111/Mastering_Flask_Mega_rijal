@@ -5,6 +5,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 from app import app, db
 from app.forms import LoginForm, RegistrationForm, EditProfileForm, PostForm, EmptyForm
 from app.models import User, Post
+from app.models import Post
 
 
 @app.before_request
