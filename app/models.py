@@ -1,7 +1,6 @@
 from datetime import datetime
 from hashlib import md5
 from time import time
-import jwt
 from app import app
 
 import jwt
