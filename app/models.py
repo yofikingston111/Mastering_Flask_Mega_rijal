@@ -10,6 +10,7 @@ from flask_login import UserMixin
 import app
 from app import db, login
 
+
 followers = db.Table('followers',
     db.Column('follower_id',db.Integer, db.ForeignKey('user.id')),
     db.Column('followed_id',db.Integer, db.ForeignKey('user.id'))
