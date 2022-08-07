@@ -78,3 +78,4 @@ Traceback (most recent call last):
 AttributeError: module 'app' has no attribute 'config'
 2022-08-02 23:57:59,764 INFO: Microblog Startup [in D:\microblog2\app\__init__.py:46]
 2022-08-03 00:12:08,204 INFO: Microblog Startup [in D:\microblog2\app\__init__.py:46]
+2022-08-03 00:15:54,232 INFO: Microblog Startup [in D:\microblog2\app\__init__.py:46]
