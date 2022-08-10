@@ -2,7 +2,6 @@ from datetime import datetime
 from hashlib import md5
 from time import time
 from app import app
-from flask import current_app
 import jwt
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
@@ -61,7 +60,7 @@ class User(UserMixin, db.Model):
             followers, (followers.c.followed_id == Post.user_id)).filter(
                 followers.c.follower_id == self.id)
         own = Post.query.filter_by(user_id=self.id)
-        return followed.union(self.posts).order_by(Post.timestamp.desc())
+        return followed.union(own).order_by(Post.timestamp.desc())
 
     def get_reset_password_token(self, expires_in=600):
         return jwt.encode(
